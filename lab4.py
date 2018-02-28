@@ -53,10 +53,10 @@ def my_len(word):
 
 	word_len = 0 # initialize variable word_len to track length
 
-	# loop over the word letter by letter
-
-		# accumulate 1 into word_len to count the letters
-
+	# loop over the word character by character
+	for ch in word:
+		# accumulate 1 into word_len to count the characters
+		word_len = word_len + 1
 	# return word_len
 	return word_len
 
