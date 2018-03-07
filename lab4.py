@@ -4,7 +4,6 @@ Mihaela Sabin
 Updated Feb 28, 2018
 Practice with sequence traversal and string processing
 """
-
 def spell_w(word):
 	"""
 	Prints out characters in word seperated by *** using a while loop
@@ -24,7 +23,6 @@ def spell_w(word):
 		# advance idx to next position
 		idx = idx + 1
 	print( ) # print new empty line
-
 
 def spell_f(word):
 	"""
@@ -50,7 +48,6 @@ def my_len(word):
 	word: string
 	Returns: Integer value corresponding to length of word
 	"""
-
 	word_len = 0 # initialize variable word_len to track length
 
 	# loop over the word character by character
@@ -61,22 +58,20 @@ def my_len(word):
 	return word_len
 
 def my_find(word, letter):
-	"""
-	Tests if letter is in word
-	word: string
-	letter: one-character string
-	Returns: True if letter is in word, False otherwise
-	"""
-	# initialize variable found to False
-	found = False
-	# loop over word using a loop variable different than letter!!!
-
-		# tests if loop variable is the same as letter
-
-			# update found to True
-
-	# return found
-	return found
+    """
+    Tests if letter is in word
+    word: string
+    letter: one-character string
+    Returns: True if letter is in word, False otherwise
+    """
+    # initialize variable found to False
+    found = False
+    # loop over word using a loop variable different than letter!!!
+    for ch in word:
+        # tests if loop variable is the same as letter and update found
+        if ch == letter:
+            found = True
+    return found
 
 		
 		
