@@ -63,6 +63,26 @@ def my_find(word, letter):
             found = True
     return found
 
+def parse_season(season_list):
+    """
+    Print out names of seasons in season_list
+    season_list: list of season names
+    """
+    for a_season in season_list:
+        print(a_season)
+
+def double_number(number_list):
+    """
+    Return copy of number_list with all its numbers doubled
+    number_list: list of numbers
+    Return: list of numbers
+    """
+    double_number_list = [ ]
+    for num in num_list:
+        double_num = num * 2
+        double_number_list.append(double_num)
+    return double_number_list
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod( )
